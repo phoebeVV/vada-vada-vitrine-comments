@@ -20,7 +20,7 @@ main .gsc-homepage-bg,
 .gsc-comment-box-main,
 [class^="gsc-"],
 [class*=" gsc-"] {
-  background-color: rgba(173, 117, 221, 0.92) !important;
+  background-color: rgba(173, 117, 222, .5) !important;
   color: #1a0a2e !important;
 }
 
@@ -211,3 +211,4 @@ main .gsc-loading-image {
 main .pagination-loader-container {
   background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
 }
+
