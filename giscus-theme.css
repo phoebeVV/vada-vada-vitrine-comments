@@ -1,0 +1,213 @@
+/*!
+ * Giscus custom theme: Purple glass / Vada Vada Vitrine
+ * Matches the glossy purple detail boxes on puzzle-detailv12.html
+ * Host this file (e.g. on Neocities) and set data-theme="https://yoursite.neocities.org/giscus-theme.css"
+ * 
+ * CUSTOMIZE: Change any --color-* value below to tweak that part of the comment section.
+ */
+
+/* ========== FORCE PURPLE BACKGROUND EVERYWHERE ========== */
+/* Giscus often ignores canvas vars on the root – hit every possible container */
+html,
+body,
+main,
+main .gsc-homepage-bg,
+.gsc-comments,
+.gsc-header,
+.gsc-timeline,
+.gsc-comment-box,
+.gsc-comment-box-write,
+.gsc-comment-box-main,
+[class^="gsc-"],
+[class*=" gsc-"] {
+  background-color: rgba(173, 117, 221, 0.92) !important;
+  color: #1a0a2e !important;
+}
+
+/* Force dark text so it's readable on purple (links keep accent via variables) */
+body,
+main,
+.gsc-header,
+.gsc-comment-box .form-control,
+.gsc-timeline {
+  color: #1a0a2e !important;
+}
+
+/* Purple borders on main containers – no white */
+main,
+.gsc-comments,
+.gsc-header,
+.gsc-comment-box,
+.gsc-comment-box-write,
+.gsc-comment-box-main,
+.gsc-timeline,
+.gsc-comment,
+.gsc-homepage-bg {
+  border-color: rgba(198, 132, 255, 0.55) !important;
+}
+
+/* Input / textarea – light purple so they're visible */
+.gsc-comment-box textarea,
+.gsc-comment-box input,
+[data-giscus-input] {
+  background-color: rgba(200, 182, 216, 0.8) !important;
+  border-color: rgba(198, 132, 255, 0.6) !important;
+  color: #1a0a2e !important;
+}
+
+/* Comment cards / discussion items */
+.gsc-comment,
+.gsc-timeline .TimelineItem-body,
+[class*="comment"] {
+  background-color: rgba(173, 117, 221, 0.7) !important;
+  border-color: rgba(198, 132, 255, 0.4) !important;
+}
+
+main {
+  /* ========== CANVAS (backgrounds) – main “glass” areas ========== */
+  --color-canvas-default: rgba(173, 117, 221, 0.88);      /* Main comment area – purple glass */
+  --color-canvas-overlay: rgba(200, 182, 216, 0.95);      /* Overlays/dropdowns – lighter purple */
+  --color-canvas-inset: rgba(198, 132, 255, 0.25);       /* Input/inset areas */
+  --color-canvas-subtle: rgba(173, 117, 221, 0.6);       /* Subtle panels */
+
+  /* ========== FOREGROUND (text) ========== */
+  --color-fg-default: #1a0a2e;                            /* Primary text – dark purple-black */
+  --color-fg-muted: #3d2a5c;                              /* Secondary text */
+  --color-fg-subtle: #5c4a7a;                            /* Placeholder / subtle text */
+
+  /* ========== BORDERS ========== */
+  --color-border-default: rgba(198, 132, 255, 0.5);      /* Default borders – purple */
+  --color-border-muted: rgba(173, 117, 221, 0.35);       /* Muted borders */
+  --color-neutral-muted: rgba(128, 90, 180, 0.25);        /* Neutral muted (dividers, etc.) */
+
+  /* ========== BUTTONS (secondary) ========== */
+  --color-btn-text: #1a0a2e;
+  --color-btn-bg: rgba(200, 182, 216, 0.7);
+  --color-btn-border: rgba(198, 132, 255, 0.4);
+  --color-btn-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  --color-btn-inset-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  --color-btn-hover-bg: rgba(210, 195, 230, 0.85);
+  --color-btn-hover-border: rgba(198, 132, 255, 0.6);
+  --color-btn-active-bg: rgba(198, 132, 255, 0.35);
+  --color-btn-active-border: rgba(198, 132, 255, 0.6);
+  --color-btn-selected-bg: rgba(173, 117, 221, 0.5);
+
+  /* ========== PRIMARY BUTTON (e.g. “Comment”, “Reply”) ========== */
+  --color-btn-primary-text: #fff;
+  --color-btn-primary-bg: #9333ea;
+  --color-btn-primary-border: rgba(147, 51, 234, 0.6);
+  --color-btn-primary-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  --color-btn-primary-inset-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  --color-btn-primary-hover-bg: #7e22ce;
+  --color-btn-primary-hover-border: rgba(126, 34, 206, 0.6);
+  --color-btn-primary-selected-bg: #6b21a8;
+  --color-btn-primary-selected-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.15);
+  --color-btn-primary-disabled-text: rgba(255, 255, 255, 0.7);
+  --color-btn-primary-disabled-bg: rgba(147, 51, 234, 0.5);
+  --color-btn-primary-disabled-border: rgba(147, 51, 234, 0.3);
+
+  /* ========== SEGMENTED CONTROL (e.g. sort / filter toggles) ========== */
+  --color-segmented-control-bg: rgba(173, 117, 221, 0.3);
+  --color-segmented-control-button-bg: rgba(200, 182, 216, 0.6);
+  --color-segmented-control-button-selected-border: rgba(198, 132, 255, 0.8);
+
+  /* ========== ACCENT (links, focus) ========== */
+  --color-accent-fg: #7e22ce;
+  --color-accent-emphasis: #6b21a8;
+  --color-accent-muted: rgba(126, 34, 206, 0.5);
+  --color-accent-subtle: rgba(126, 34, 206, 0.15);
+
+  /* ========== SUCCESS / ATTENTION / DANGER ========== */
+  --color-success-fg: #16a34a;
+  --color-attention-fg: #ca8a04;
+  --color-attention-muted: rgba(202, 138, 4, 0.5);
+  --color-attention-subtle: rgba(202, 138, 4, 0.15);
+  --color-danger-fg: #dc2626;
+  --color-danger-muted: rgba(220, 38, 38, 0.5);
+  --color-danger-subtle: rgba(220, 38, 38, 0.12);
+
+  /* ========== ACTION LIST (dropdown items, hover) ========== */
+  --color-action-list-item-default-hover-bg: rgba(198, 132, 255, 0.2);
+
+  /* ========== MISC ========== */
+  --color-primer-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.08);
+  --color-scale-gray-7: rgba(90, 60, 120, 0.4);
+  --color-scale-blue-8: #4c1d95;
+
+  /* Extensions used by Giscus (reactions, etc.) */
+  --color-social-reaction-bg-hover: var(--color-scale-gray-7);
+  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
+}
+
+/* ========== PRETTYLIGHTS (code blocks in comments) ========== */
+main {
+  --color-prettylights-syntax-comment: #6b5b7a;
+  --color-prettylights-syntax-constant: #7e22ce;
+  --color-prettylights-syntax-entity: #a855f7;
+  --color-prettylights-syntax-storage-modifier-import: #3d2a5c;
+  --color-prettylights-syntax-entity-tag: #16a34a;
+  --color-prettylights-syntax-keyword: #dc2626;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #b45309;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #dc2626;
+  --color-prettylights-syntax-invalid-illegal-text: #1a0a2e;
+  --color-prettylights-syntax-invalid-illegal-bg: #fecaca;
+  --color-prettylights-syntax-carriage-return-text: #1a0a2e;
+  --color-prettylights-syntax-carriage-return-bg: #fecaca;
+  --color-prettylights-syntax-string-regexp: #16a34a;
+  --color-prettylights-syntax-markup-list: #5c4a7a;
+  --color-prettylights-syntax-markup-heading: #7e22ce;
+  --color-prettylights-syntax-markup-italic: #3d2a5c;
+  --color-prettylights-syntax-markup-bold: #3d2a5c;
+  --color-prettylights-syntax-markup-deleted-text: #dc2626;
+  --color-prettylights-syntax-markup-deleted-bg: #fecaca;
+  --color-prettylights-syntax-markup-inserted-text: #16a34a;
+  --color-prettylights-syntax-markup-inserted-bg: #bbf7d0;
+  --color-prettylights-syntax-markup-changed-text: #b45309;
+  --color-prettylights-syntax-markup-changed-bg: #fed7aa;
+  --color-prettylights-syntax-markup-ignored-text: #5c4a7a;
+  --color-prettylights-syntax-markup-ignored-bg: rgba(198, 132, 255, 0.2);
+  --color-prettylights-syntax-meta-diff-range: #a855f7;
+  --color-prettylights-syntax-brackethighlighter-angle: #6b5b7a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #5c4a7a;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+}
+
+/* ========== GLOSSY CONTAINER (match your detail-box look) ========== */
+/* These classes are used inside the Giscus iframe – adds the inset shadow “glass” effect */
+/* Whole comment area: purple glass + inset shadow like Vada Vision / SOURCE boxes */
+main {
+  border-radius: 15px;
+  box-shadow: inset 0 4px 4px rgba(200, 182, 216, 0.5), inset 0 -10px 4px rgba(198, 132, 255, 0.35);
+}
+
+main .gsc-homepage-bg {
+  background-color: var(--color-canvas-default) !important;
+  border-radius: 15px;
+}
+
+/* Header area above comments */
+.gsc-header {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-border-muted);
+}
+
+/* Comment input box */
+.gsc-comment-box {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* Timeline (comment list) */
+.gsc-timeline {
+  border-radius: 0 0 15px 15px;
+}
+
+/* Loading image (optional – keep or remove) */
+main .gsc-loading-image {
+  background-image: url("https://github.githubassets.com/images/mona-loading-dimmed.gif");
+}
+
+main .pagination-loader-container {
+  background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
+}
