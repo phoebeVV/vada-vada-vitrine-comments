@@ -52,7 +52,7 @@ main,
 [data-giscus-input] {
   background-color: rgba(200, 182, 216, 0.5) !important;
   border-color: rgba(198, 132, 255, 0.5) !important;
-  color: #1a0a2e !important;
+  color: rgba(173, 117, 222, .5) !important;
 }
 
 /* Comment cards / discussion items */
@@ -65,8 +65,8 @@ main,
 
 main {
   /* ========== CANVAS (backgrounds) – main “glass” areas ========== */
-  --color-canvas-default: rgba(173, 117, 221, 0.88);      /* Main comment area – purple glass */
-  --color-canvas-overlay: rgba(200, 182, 216, 0.95);      /* Overlays/dropdowns – lighter purple */
+  --color-canvas-default: rgba(173, 117, 221, 0.5);      /* Main comment area – purple glass */
+  --color-canvas-overlay: rgba(173, 117, 222, .5);      /* Overlays/dropdowns – lighter purple */
   --color-canvas-inset: rgba(198, 132, 255, 0.25);       /* Input/inset areas */
   --color-canvas-subtle: rgba(173, 117, 221, 0.6);       /* Subtle panels */
 
@@ -211,5 +211,6 @@ main .gsc-loading-image {
 main .pagination-loader-container {
   background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
 }
+
 
 
