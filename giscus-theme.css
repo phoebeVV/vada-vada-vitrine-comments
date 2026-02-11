@@ -21,7 +21,7 @@ main .gsc-homepage-bg,
 [class^="gsc-"],
 [class*=" gsc-"] {
   background-color: rgba(173, 117, 222, .5) !important;
-  color: #1a0a2e !important;
+  color: rgba(173, 117, 222, .5) !important;
 }
 
 /* Force dark text so it's readable on purple (links keep accent via variables) */
@@ -30,7 +30,7 @@ main,
 .gsc-header,
 .gsc-comment-box .form-control,
 .gsc-timeline {
-  color: #1a0a2e !important;
+  color: #000000 !important;
 }
 
 /* Purple borders on main containers – no white */
@@ -50,8 +50,8 @@ main,
 .gsc-comment-box textarea,
 .gsc-comment-box input,
 [data-giscus-input] {
-  background-color: rgba(200, 182, 216, 0.8) !important;
-  border-color: rgba(198, 132, 255, 0.6) !important;
+  background-color: rgba(200, 182, 216, 0.5) !important;
+  border-color: rgba(198, 132, 255, 0.5) !important;
   color: #1a0a2e !important;
 }
 
@@ -59,7 +59,7 @@ main,
 .gsc-comment,
 .gsc-timeline .TimelineItem-body,
 [class*="comment"] {
-  background-color: rgba(173, 117, 221, 0.7) !important;
+  background-color: rgba(173, 117, 222, .5) !important;
   border-color: rgba(198, 132, 255, 0.4) !important;
 }
 
@@ -211,4 +211,5 @@ main .gsc-loading-image {
 main .pagination-loader-container {
   background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
 }
+
 
