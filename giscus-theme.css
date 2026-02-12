@@ -21,7 +21,8 @@ main .gsc-homepage-bg,
 [class^="gsc-"],
 [class*=" gsc-"] {
   background-color: rgba(173, 117, 221, 0.5) !important;
-  color: #1a0a2e !important;
+  box-shadow: inset 0px 4px 4px rgba(200, 182, 216, .5), inset 0px -7px 4px rgba(198, 132, 255, .5;)
+  color: #000000 !important;
 }
 
 /* Force dark text so it's readable on purple (links keep accent via variables) */
@@ -50,7 +51,7 @@ main,
 .gsc-comment-box textarea,
 .gsc-comment-box input,
 [data-giscus-input] {
-  background-color: rgba(200, 182, 216, 0.8) !important;
+  background-color: rgba(200, 182, 216, 0.7) !important;
   border-color: rgba(198, 132, 255, 0.6) !important;
   color: #1a0a2e !important;
 }
@@ -211,4 +212,5 @@ main .gsc-loading-image {
 main .pagination-loader-container {
   background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
 }
+
 
