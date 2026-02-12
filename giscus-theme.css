@@ -20,7 +20,7 @@ main .gsc-homepage-bg,
 .gsc-comment-box-main,
 [class^="gsc-"],
 [class*=" gsc-"] {
-  background-color: rgba(173, 117, 221, 0.92) !important;
+  background-color: rgba(173, 117, 221, 0.5) !important;
   color: #1a0a2e !important;
 }
 
@@ -43,7 +43,7 @@ main,
 .gsc-timeline,
 .gsc-comment,
 .gsc-homepage-bg {
-  border-color: rgba(198, 132, 255, 0.55) !important;
+  border-color: rgba(173, 117, 221, 0.5) !important;
 }
 
 /* Input / textarea – light purple so they're visible */
@@ -59,15 +59,15 @@ main,
 .gsc-comment,
 .gsc-timeline .TimelineItem-body,
 [class*="comment"] {
-  background-color: rgba(173, 117, 221, 0.7) !important;
-  border-color: rgba(198, 132, 255, 0.4) !important;
+  background-color: rgba(173, 117, 221, 0.5) !important;
+  border-color: rgba(173, 117, 221, 0.5) !important;
 }
 
 main {
   /* ========== CANVAS (backgrounds) – main “glass” areas ========== */
-  --color-canvas-default: rgba(173, 117, 221, 0.88);      /* Main comment area – purple glass */
-  --color-canvas-overlay: rgba(200, 182, 216, 0.95);      /* Overlays/dropdowns – lighter purple */
-  --color-canvas-inset: rgba(198, 132, 255, 0.25);       /* Input/inset areas */
+  --color-canvas-default: rgba(173, 117, 221, 0.5);      /* Main comment area – purple glass */
+  --color-canvas-overlay: rgba(200, 182, 216, 0.6);      /* Overlays/dropdowns – lighter purple */
+  --color-canvas-inset: rgba(178, 130, 237, 0.25);       /* Input/inset areas */
   --color-canvas-subtle: rgba(173, 117, 221, 0.6);       /* Subtle panels */
 
   /* ========== FOREGROUND (text) ========== */
@@ -211,3 +211,4 @@ main .gsc-loading-image {
 main .pagination-loader-container {
   background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
 }
+
