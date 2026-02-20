@@ -1,8 +1,13 @@
 /*!
  * Giscus custom theme: Purple glass / Vada Vada Vitrine
  * Matches the glossy purple detail boxes on puzzle-detailv12.html
- * Host this file (e.g. on Neocities) and set data-theme="https://yoursite.neocities.org/giscus-theme.css"
- * 
+ *
+ * USE: Host this file (e.g. on Neocities) and in your giscus <script> set:
+ *   data-theme="https://vadavadavitrine.neocities.org/giscus-theme.css?v=1"
+ *
+ * REFRESH CACHE: When you edit this file, bump the ?v= number so browsers load the new CSS:
+ *   ...giscus-theme.css?v=2   ...giscus-theme.css?v=3   or use a timestamp: ?v=1739123456
+ *
  * CUSTOMIZE: Change any --color-* value below to tweak that part of the comment section.
  */
 
@@ -20,9 +25,8 @@ main .gsc-homepage-bg,
 .gsc-comment-box-main,
 [class^="gsc-"],
 [class*=" gsc-"] {
-  background-color: rgba(173, 117, 221, 0.5) !important;
-  box-shadow: inset 0px 4px 4px rgba(200, 182, 216, .5), inset 0px -7px 4px rgba(198, 132, 255, .5;)
-  color: #000000 !important;
+  background-color: rgba(173, 117, 221, 0.92) !important;
+  color: #1a0a2e !important;
 }
 
 /* Force dark text so it's readable on purple (links keep accent via variables) */
@@ -44,14 +48,14 @@ main,
 .gsc-timeline,
 .gsc-comment,
 .gsc-homepage-bg {
-  border-color: rgba(173, 117, 221, 0.5) !important;
+  border-color: rgba(198, 132, 255, 0.55) !important;
 }
 
 /* Input / textarea – light purple so they're visible */
 .gsc-comment-box textarea,
 .gsc-comment-box input,
 [data-giscus-input] {
-  background-color: rgba(200, 182, 216, 0.7) !important;
+  background-color: rgba(200, 182, 216, 0.8) !important;
   border-color: rgba(198, 132, 255, 0.6) !important;
   color: #1a0a2e !important;
 }
@@ -60,15 +64,15 @@ main,
 .gsc-comment,
 .gsc-timeline .TimelineItem-body,
 [class*="comment"] {
-  background-color: rgba(173, 117, 221, 0.5) !important;
-  border-color: rgba(173, 117, 221, 0.5) !important;
+  background-color: rgba(173, 117, 221, 0.7) !important;
+  border-color: rgba(198, 132, 255, 0.4) !important;
 }
 
 main {
   /* ========== CANVAS (backgrounds) – main “glass” areas ========== */
-  --color-canvas-default: rgba(173, 117, 221, 0.5);      /* Main comment area – purple glass */
-  --color-canvas-overlay: rgba(200, 182, 216, 0.6);      /* Overlays/dropdowns – lighter purple */
-  --color-canvas-inset: rgba(178, 130, 237, 0.25);       /* Input/inset areas */
+  --color-canvas-default: rgba(173, 117, 221, 0.88);      /* Main comment area – purple glass */
+  --color-canvas-overlay: rgba(200, 182, 216, 0.95);      /* Overlays/dropdowns – lighter purple */
+  --color-canvas-inset: rgba(198, 132, 255, 0.25);       /* Input/inset areas */
   --color-canvas-subtle: rgba(173, 117, 221, 0.6);       /* Subtle panels */
 
   /* ========== FOREGROUND (text) ========== */
@@ -212,5 +216,3 @@ main .gsc-loading-image {
 main .pagination-loader-container {
   background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
 }
-
-
